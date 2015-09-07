@@ -38,7 +38,7 @@ for (var j=1; j< (volunteers + 1); j++) {
 	streetarrvo.push(streetvo);
 	}
 
-var victimstring = "There are " + victims + " victims.\n";
+var victimstring = "There are " + victim(s) + " victims.\n";
 
 	for (var k = 0; k < (victims); k++) {
           victimstring +=  "Victim " + (k + 1) + " Name: " + namearr[k] +"\n" + 
@@ -46,8 +46,16 @@ var victimstring = "There are " + victims + " victims.\n";
           "Victim " + (k + 1) + " Address: " + streetarr[k] +"\n" + "------------------------------" + "\n";   
           }
 
+var volunteerstring = "There are " + volunteer(s) + " volunteers.\n";
+
+	for (var m = 0; m < (volunteers); m++) {
+          volunteerstring +=  "Volunteer " + (m + 1) + " Name: " + namearrvo[m] +"\n" + 
+          "Volunteer " + (m + 1) + " Phone: " + phonearrvo[m] +"\n" + 
+          "Volunteer " + (m + 1) + " Address: " + streetarrvo[m] +"\n" + "------------------------------" + "\n";   
+          }
 
 
-alert(victimstring);
+
+alert(victimstring + volunteerstring);
 
 
