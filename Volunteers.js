@@ -38,4 +38,16 @@ for (var j=1; j< (volunteers + 1); j++) {
 	streetarrvo.push(streetvo);
 	}
 
+var victimstring = "There are " + victims + " victims.\n";
+
+	for (var k = 0; k < (victims); k++) {
+          victimstring +=  "Victim " + (k + 1) + " Name: " + namearr[k] +"\n" + 
+          "Victim " + (k + 1) + " Phone: " + phonearr[k] +"\n" + 
+          "Victim " + (k + 1) + " Address: " + streetarr[k] +"\n" + "------------------------------" + "\n";   
+          }
+
+
+
+alert(victimstring);
+
 
